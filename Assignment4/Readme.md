@@ -18,7 +18,6 @@ The project begins with a baseline Artificial Neural Network (ANN) trained on fl
 * Image size: 32 × 32 × 3 (RGB)
 
 ### Classes
-
 ✈️ Airplane
 🚗 Automobile
 🐦 Bird
