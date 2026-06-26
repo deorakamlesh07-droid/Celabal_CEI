@@ -95,6 +95,22 @@ Dataset: **MNIST Handwritten Digits**
 * Grayscale Images
 * 10 Digit Classes (0–9)
 
+### Dataset Samples
+
+<p align="center">
+  <img src="Assets/input1.png" alt="MNIST Dataset Samples" width="750"/>
+</p>
+
+---
+
+# 🧪 Noisy Input Images
+
+Gaussian noise is added to the original MNIST images to generate noisy inputs for training the denoising autoencoder. The model learns to reconstruct clean images from these noisy samples.
+
+<p align="center">
+  <img src="Assets/noisyimage.png" alt="Noisy MNIST Images" width="750"/>
+</p>
+
 ---
 
 # 🛠️ Technologies Used
@@ -117,6 +133,14 @@ The model was trained using:
 * **Input:** Noisy MNIST Images
 * **Target:** Original Clean MNIST Images
 
+### Training & Validation Loss
+
+The graph below shows the training and validation loss during model training. A steady decrease in both losses indicates that the model successfully learns to reconstruct clean images from noisy inputs.
+
+<p align="center">
+  <img src="Assets/training and validation.png" alt="Training and Validation Loss" width="750"/>
+</p>
+
 ---
 
 # 📈 Results
@@ -126,6 +150,12 @@ The trained model learns to reconstruct clean handwritten digits by removing Gau
 * Side-by-side comparison of **Original**, **Noisy**, and **Reconstructed** images.
 * Peak Signal-to-Noise Ratio (**PSNR**) for measuring reconstruction quality.
 * Training and validation loss curves to monitor model convergence.
+
+### Reconstruction Results
+
+<p align="center">
+  <img src="Assets/final output.png" alt="Original vs Noisy vs Reconstructed Images" width="850"/>
+</p>
 
 ---
 
@@ -152,14 +182,14 @@ The trained model learns to reconstruct clean handwritten digits by removing Gau
 # 📁 Repository Structure
 
 ```text
+.
+├── assets/
+│   ├── input1.png
+│   ├── noisyimage.png
+│   ├── training and validation.png
+│   └── final output.png
 ├── week6.ipynb
-├── README.md
-├── outputs/
-│   ├── training_loss.png
-│   ├── original_vs_noisy.png
-│   ├── reconstructed_images.png
-│   └── psnr_results.png
-└── assets/
+└── README.md
 ```
 
 ---
